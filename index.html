@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento - indica que é HTML5 -->
+<html lang="pt-BR">
+<!-- Elemento raiz do documento, com atributo de idioma (português Brasil) -->
+
+<head>
+    <!-- Cabeçalho do documento - contém metadados e links para recursos -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para responsividade em dispositivos móveis -->
+    <title>Meu Portfólio de Aprendizado</title>
+    <!-- Título que aparece na aba do navegador -->
+    
+    <style>
+        /* 
+        * ESTILOS CSS - REGRAS DE APARÊNCIA
+        * Aqui definimos como os elementos HTML devem ser exibidos 
+        */
+        
+        /* 
+        * Variáveis CSS - facilita a manutenção e consistência visual 
+        * Podemos alterar as cores do site todo mudando apenas aqui
+        */
+        :root {
+            --cor-primaria: #2c3e50;    /* Cor azul escuro para cabeçalho/rodapé */
+            --cor-secundaria: #3498db;  /* Cor azul claro para elementos secundários */
+            --cor-fundo: #ecf0f1;       /* Cor de fundo do corpo do site */
+            --cor-texto: #333;          /* Cor principal do texto */
+        }
+        
+        /* Estilos para o elemento body (todo o conteúdo visível da página) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte padrão */
+            line-height: 1.6;           /* Espaçamento entre linhas para melhor legibilidade */
+            color: var(--cor-texto);    /* Usa a variável de cor de texto definida acima */
+            background-color: var(--cor-fundo); /* Cor de fundo usando variável */
+            margin: 0;                  /* Remove margens padrão do navegador */
+            padding: 0;                 /* Remove paddings padrão do navegador */
+        }
+        
+        /* Estilização do cabeçalho */
+        header {
+            background-color: var(--cor-primaria); /* Usa a cor primária */
+            color: white;               /* Texto em branco para contraste */
+            padding: 2rem 0;           /* Espaçamento interno: 2rem topo/baixo, 0 laterais */
+            text-align: center;         /* Centraliza o texto */
+        }
+        
+        /* Barra de navegação */
+        nav {
+            display: flex;              /* Ativa o modelo Flexbox para alinhamento fácil */
+            justify-content: center;    /* Centraliza os itens horizontalmente */
+            background-color: var(--cor-secundaria); /* Cor secundária */
+            padding: 1rem;              /* Espaçamento interno */
+        }
+        
+        /* Links da navegação */
+        nav a {
+            color: white;               /* Cor do texto */
+            text-decoration: none;     /* Remove sublinhado padrão dos links */
+            margin: 0 1rem;            /* Margem horizontal entre os links */
+            font-weight: bold;         /* Texto em negrito */
+        }
+        
+        /* Estilo das seções principais */
+        section {
+            padding: 2rem;             /* Espaçamento interno */
+            max-width: 1200px;         /* Largura máxima para telas grandes */
+            margin: 0 auto;            /* Centraliza a seção na página */
+        }
+        
+        /* Estilo dos cards de projetos */
+        .projeto {
+            background: white;          /* Fundo branco para destacar */
+            margin: 1rem 0;            /* Espaçamento externo */
+            padding: 1.5rem;           /* Espaçamento interno */
+            border-radius: 5px;        /* Cantos arredondados */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+        }
+        
+        /* Rodapé da página */
+        footer {
+            text-align: center;        /* Centraliza o conteúdo */
+            padding: 1rem;             /* Espaçamento interno */
+            background-color: var(--cor-primaria); /* Mesma cor do cabeçalho */
+            color: white;              /* Texto em branco */
+        }
+        
+        /* 
+        * MEDIA QUERY - REGRAS PARA TELAS PEQUENAS (RESPONSIVIDADE)
+        * Aplica estilos diferentes quando a tela tem no máximo 768px de largura
+        */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column; /* Empilha os links verticalmente */
+                align-items: center;    /* Centraliza os itens */
+            }
+            
+            nav a {
+                margin: 0.5rem 0;      /* Ajusta o espaçamento entre links */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Conteúdo visível da página começa aqui -->
+    
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>Meu Portfólio de Aprendizado</h1>
+        <p>Um espaço para documentar minha jornada de desenvolvimento</p>
+    </header>
+    
+    <!-- Barra de navegação com links âncora -->
+    <nav>
+        <!-- Links que levam às seções correspondentes (#id) -->
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#aprendizados">Aprendizados</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    
+    <!-- Seção "Sobre mim" com id para o link âncora -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Este é um portfólio criado para documentar meu processo de aprendizado em desenvolvimento web. Aqui você encontrará projetos que construí enquanto aprendia diferentes tecnologias.</p>
+        
+        <h3>Habilidades em Desenvolvimento</h3>
+        <ul>
+            <li>HTML5 (em aprendizado)</li>
+            <li>CSS3 (em aprendizado)</li>
+            <li>JavaScript (básico)</li>
+            <li>Git e GitHub (iniciante)</li>
+        </ul>
+    </section>
+    
+    <!-- Seção de projetos -->
+    <section id="projetos">
+        <h2>Projetos de Aprendizado</h2>
+        
+        <!-- Card de projeto individual -->
+        <div class="projeto">
+            <h3>Primeiro Site HTML</h3>
+            <p>Meu primeiro contato com HTML, criando uma página simples com tags básicas.</p>
+            <p><strong>O que aprendi:</strong> Estrutura básica do HTML, tags como &lt;h1&gt;, &lt;p&gt;, &lt;a&gt;, etc.</p>
+            <a href="#">Ver projeto</a> <!-- Link placeholder (simulado) -->
+        </div>
+        
+        <div class="projeto">
+            <h3>Página com CSS</h3>
+            <p>Primeira tentativa de estilizar uma página com CSS.</p>
+            <p><strong>O que aprendi:</strong> Seletores, propriedades básicas, box model.</p>
+            <a href="#">Ver projeto</a>
+        </div>
+        
+        <div class="projeto">
+            <h3>Site Responsivo</h3>
+            <p>Projeto onde apliquei media queries para tornar um site responsivo.</p>
+            <p><strong>O que aprendi:</strong> Design responsivo, media queries, viewport.</p>
+            <a href="#">Ver projeto</a>
+        </div>
+    </section>
+    
+    <!-- Seção de lições aprendidas -->
+    <section id="aprendizados">
+        <h2>Lições Aprendidas</h2>
+        <div class="projeto">
+            <h3>Desafios Encontrados</h3>
+            <p>Lista de problemas que enfrentei e como os resolvi:</p>
+            <ul>
+                <li><strong>Centralizar elementos:</strong> Aprendi sobre flexbox e como usar display: flex</li>
+                <li><strong>Espaçamento consistente:</strong> Entendi melhor o uso de margin e padding</li>
+                <li><strong>Cores harmoniosas:</strong> Comecei a estudar teoria das cores para paletas melhores</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Seção de contato com formulário simples -->
+    <section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Se quiser trocar ideias sobre aprendizado em programação:</p>
+    
+    <!-- SUBSTITUA ESTE FORMULÁRIO FICTÍCIO PELO FORMSUBMIT -->
+    <form action="https://formsubmit.co/n7zinn.marketing@gmail.com" method="POST">
+
+       <!-- Se estiver usando GitHub Pages: -->
+<input type="hidden" name="_next" value="https://github.com/n7zinn/Nicolas.git/obrigado.html">
+
+<!-- Ou para redirecionar de volta à mesma página: -->
+<input type="hidden" name="_next" value="https://github.com/n7zinn/Nicolas.git/index.html?enviado=true">
+
+<!-- Adicione o atributo 'required' nos campos obrigatórios -->
+<input type="text" id="nome" name="nome" required>
+        
+        <!-- Campos do formulário (mantenha os que já existiam) -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+    
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Portfólio de aprendizado - Atualizado em 2025</p>
+    </footer>
+
+    <script>
+    // Menu ativo conforme scroll
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Validação do formulário
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        const email = document.getElementById('email').value;
+        if (!email.includes('@')) {
+            e.preventDefault();
+            alert('Por favor, insira um email válido!');
+        }
+    });
+</script>
+</body>
+</html>
