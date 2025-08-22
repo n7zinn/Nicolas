@@ -18,10 +18,9 @@
   <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="50" height="50" />
   
   <!-- Backend & Languages -->
-  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/826ed91c-cd68-4a62-9293-7e16532789c7" />
-
-  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/74344f7d-d913-4dea-bb3d-c117fa5c135b" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C" width="50" height="50" />
+  <img width="50" height="50" alt="javascript" src="https://github.com/user-attachments/assets/826ed91c-cd68-4a62-9293-7e16532789c7" />
+  <img width="50" height="50" alt="typescript" src="https://github.com/user-attachments/assets/74344f7d-d913-4dea-bb3d-c117fa5c135b" />
+  <img width="50" height="50" alt="C" src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"/>
   <p/>
 
 
